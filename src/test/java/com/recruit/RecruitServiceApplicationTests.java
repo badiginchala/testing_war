@@ -1,4 +1,4 @@
-/*package com.recruit;
+package com.recruit;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,4 +14,3 @@ public class RecruitServiceApplicationTests {
 	}
 
 }
-*/
