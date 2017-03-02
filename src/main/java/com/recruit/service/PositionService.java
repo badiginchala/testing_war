@@ -1,5 +1,7 @@
 package com.recruit.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,4 +19,7 @@ public class PositionService implements IPositionService {
 		return positionRepository.save(position);
 	}
 
+	public List<Position> getPosition() {
+		return positionRepository.findAll();
+	}
 }

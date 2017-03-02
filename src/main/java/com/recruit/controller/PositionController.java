@@ -1,5 +1,7 @@
 package com.recruit.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,6 +23,13 @@ public class PositionController {
 	public Position createPosition(@RequestBody Position position) {
 		positionService.preparePosition(position);
 		return position;
+	}
+	
+	@RequestMapping(value = "/position", method = RequestMethod.GET)
+	@ResponseBody
+	public List<Position> getPosition() {
+		List<Position> positionList = positionService.getPosition();
+		return positionList;
 	}
 
 }
