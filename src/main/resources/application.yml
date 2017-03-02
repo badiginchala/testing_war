@@ -1,0 +1,12 @@
+server:
+  port: 9060
+recruit:
+  message: Hello this is local dev machine!!
+
+spring:
+  profiles: default,development
+  application:
+    name: recruit-service
+  data:
+    mongodb:
+      database: recruitLocalDB
